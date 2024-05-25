@@ -62,7 +62,7 @@ const characterMap = {
       "J": "๋",
       "K": "ษ",
       "L": "ศ",
-      "M": "ฦ", // Direct mapping for M
+      "M": "ฦ",
       "N": "์",
       "O": "ฯ",
       "P": "ญ",
@@ -75,7 +75,7 @@ const characterMap = {
       "X": ")",
       "Y": "ํ",
       "Z": "(",
-      ":": "ซ", // Add your mapping for uppercase G
+      ":": "ซ", 
       
       // Thai lowercase mappings (modify as needed)
       "ๆ": "q",

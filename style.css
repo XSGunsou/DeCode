@@ -3,8 +3,8 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 20px;
-  background-color: #27282c; /* Added background color */
-  color: #ffffff; /* Optional: Set text color to white for better contrast */
+  background-color: #27282c;
+  color: #ffffff; /* Ensures text contrast against dark background */
 }
 
 h1 {
@@ -16,16 +16,24 @@ p {
 }
 
 button {
-  padding: 5px 10px;
+  padding: 10px 20px; /* Combine padding */
   border: 1px solid #ccc;
   cursor: pointer;
   margin-top: 15px;
   font-size: 18px;
-  padding: 10px 20px;
 }
 
 #outputText {
   font-size: 20px;
   line-height: 1.5;
   margin-top: 20px;
+}
+
+.watermark {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  font-size: 12px;
+  color: #ffffff;
+  opacity: 0.5; /* Makes the text slightly faded */
 }

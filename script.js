@@ -47,6 +47,7 @@ const characterMap = {
       ">": "ฬ",
       "/": "ฝ",
       "?": "ฦ",
+      "^": "ู",
       
       // Uppercase mappings (modify as needed)
       "A": "ฤ",

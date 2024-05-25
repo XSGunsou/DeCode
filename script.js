@@ -1,0 +1,151 @@
+const characterMap = {
+      // Lowercase mappings
+      "a": "ฟ",
+      "b": "ิ",
+      "c": "แ",
+      "d": "ก",
+      "e": "ำ",
+      "f": "ด",
+      "g": "เ",
+      "h": "้",
+      "i": "ร",
+      "j": "่",
+      "k": "า",
+      "l": "ส",
+      "m": "ท",
+      "n": "ื",
+      "o": "น",
+      "p": "ย",
+      "q": "ๆ",
+      "r": "พ",
+      "s": "ห",
+      "t": "ะ",
+      "u": "ี",
+      "v": "อ",
+      "w": "ไ",
+      "x": "ป",
+      "y": "ั",
+      "z": "ผ",
+      ";": "ว",
+      "4": "ภ",
+      "5": "ถ",
+      "6": "ุ",
+      "7": "ึ",
+      "8": "ค",
+      "9": "ต",
+      "0": "จ",
+      "-": "ข",
+      "=": "ช",
+      "[": "บ",
+      "]": "ล",
+      "{": "ฐ",
+      ",": "ม",
+      "|": "ฅ",
+      "'": "ง",
+      "<": "ฒ",
+      ".": "ใ",
+      ">": "ฬ",
+      "/": "ฝ",
+      "?": "ฦ",
+      
+      // Uppercase mappings (modify as needed)
+      "A": "ฤ",
+      "B": "ฺ",
+      "C": "ฉ",
+      "D": "ฏ",
+      "E": "ฎ",
+      "F": "โ",
+      "G": "ฌ",
+      "H": "็",
+      "I": "ณ",
+      "J": "๋",
+      "K": "ษ",
+      "L": "ศ",
+      "M": "ฦ", // Direct mapping for M
+      "N": "์",
+      "O": "ฯ",
+      "P": "ญ",
+      "Q": "๐",
+      "R": "ฑ",
+      "S": "ฆ",
+      "T": "ธ",
+      "U": "๊",
+      "V": "ฮ",
+      "X": ")",
+      "Y": "ํ",
+      "Z": "(",
+      ":": "ซ", // Add your mapping for uppercase G
+      
+      // Thai lowercase mappings (modify as needed)
+      "ๆ": "q",
+      "ไ": "w",
+      "ำ": "e",
+      "พ": "r",
+      "ะ": "t",
+      "ั": "y",
+      "ี": "u",
+      "ร": "i",
+      "น": "o",
+      "ย": "p",
+      "ฟ": "a",
+      "ห": "s",
+      "ก": "d",
+      "ด": "f",
+      "เ": "g",
+      "้": "h",
+      "่": "j",
+      "า": "k",
+      "ส": "l",
+      "ผ": "z",
+      "ป": "x",
+      "แ": "c",
+      "อ": "v",
+      "ิ": "b",
+      "ื": "n",
+      "ท": "m",
+      
+      // Thai uppercase mappings (modify as needed)
+      "๐": "Q",
+      "ฎ": "E",
+      "ฑ": "R",
+      "ธ": "T",
+      "ํ": "Y",
+      "๊": "U",
+      "ณ": "I",
+      "ฯ": "O",
+      "ญ": "P",
+      "ฤ": "A",
+      "ฆ": "S",
+      "ฏ": "D",
+      "โ": "F",
+      "ฌ": "G",
+      "็": "H",
+      "๋": "J",
+      "ษ": "K",
+      "ศ": "L",
+      "(": "Z",
+      ")": "X",
+      "ฉ": "C",
+      "ฮ": "V",
+      "ฺ": "B",
+      "์": "N",
+      "?": "M",
+    };
+    
+    const inputText = document.getElementById('inputText');
+    const outputText = document.getElementById('outputText');
+    
+    function convertMessage() {
+      const message = inputText.value;
+      let convertedMessage = "";
+    
+      for (let i = 0; i < message.length; i++) {
+        const char = message[i];
+        const convertedChar = characterMap[char];
+    
+        convertedMessage += convertedChar ? convertedChar : char; // Keep unmapped characters
+      }
+    
+      outputText.textContent = `${convertedMessage}`;
+    }
+  

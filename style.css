@@ -4,10 +4,11 @@ body {
   margin: 0;
   padding: 20px;
   background-color: #27282c;
-  color: #ffffff; /* Ensures text contrast against dark background */
+  color: #ffffff;
 }
 
 h1 {
+  font-size: 40px;
   margin-bottom: 10px;
 }
 
@@ -16,15 +17,22 @@ p {
 }
 
 button {
-  padding: 10px 20px; /* Combine padding */
+  padding: 10px 20px; 
   border: 1px solid #ccc;
   cursor: pointer;
-  margin-top: 15px;
+  margin-top: 20px;
   font-size: 18px;
+  border-radius: 6px;
+}
+
+input {
+  font-size: 20px; 
+  padding: 5px;
+  border-radius: 5px; 
 }
 
 #outputText {
-  font-size: 20px;
+  font-size: 30px;
   line-height: 1.5;
   margin-top: 20px;
 }
@@ -35,5 +43,5 @@ button {
   left: 10px;
   font-size: 12px;
   color: #ffffff;
-  opacity: 0.5; /* Makes the text slightly faded */
+  opacity: 0.5; 
 }

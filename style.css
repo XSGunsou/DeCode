@@ -1,30 +1,31 @@
 body {
-    text-align: center;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 20px;
-  }
-  
-  h1 {
-    margin-bottom: 10px;
-  }
-  
-  p {
-    margin-bottom: 5px;
-  }
-  
-  button {
-    padding: 5px 10px;
-    border: 1px solid #ccc;
-    cursor: pointer;
-    margin-top: 15px; /* Add margin above the button */
-  font-size: 18px; /* Increase button font size */
-  padding: 10px 20px; /* Adjust button padding */
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #27282c; /* Added background color */
+  color: #ffffff; /* Optional: Set text color to white for better contrast */
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 5px;
+}
+
+button {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  margin-top: 15px;
+  font-size: 18px;
+  padding: 10px 20px;
 }
 
 #outputText {
-  font-size: 20px; /* Increase converted message font size */
-  line-height: 1.5; /* Add spacing between lines */
-  margin-top: 20px; /* Add margin above the message */
+  font-size: 20px;
+  line-height: 1.5;
+  margin-top: 20px;
 }
-  

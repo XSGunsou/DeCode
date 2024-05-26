@@ -74,7 +74,8 @@ const characterMap = {
   "X": ")",  
   "Y": "ํ",
   "Z": "(",
-  ":": "ซ", // Add your mapping for uppercase G
+  ":": "ซ", 
+  "^": "ู", // Add your mapping for uppercase G
   
   // Thai lowercase mappings (modify as needed)
   "ๆ": "q",

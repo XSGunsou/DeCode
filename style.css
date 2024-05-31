@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100&display=swap');
+
 body {
   text-align: center;
   font-family: Arial, sans-serif;
@@ -8,21 +10,19 @@ body {
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 90px;
   margin-bottom: 10px;
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.highlight {
+  color: #4F95DA; /* Color matching the button hover state */
 }
 
 p {
   margin-bottom: 5px;
-}
-
-button {
-  padding: 10px 20px; 
-  border: 1px solid #ccc;
-  cursor: pointer;
-  margin-top: 20px;
-  font-size: 18px;
-  border-radius: 6px;
 }
 
 input {
@@ -44,4 +44,61 @@ input {
   font-size: 12px;
   color: #ffffff;
   opacity: 0.5; 
+}
+
+#kofi-container {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 999; /* Increase z-index to a high value */
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.center {
+  width: 180px;
+  height: 60px;
+  position: relative;
+}
+
+.btn {
+  font-family: 'Lato', sans-serif; /* Apply Lato font to button */
+  width: 180px;
+  height: 60px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid #91C9FF;
+  outline: none;
+  transition: 1s ease-in-out;
+}
+
+svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  fill: none;
+  stroke: #fff;
+  stroke-dasharray: 150 480;
+  stroke-dashoffset: 150;
+  transition: 1s ease-in-out;
+}
+
+.btn:hover {
+  transition: 1s ease-in-out;
+  background: #4F95DA;
+}
+
+.btn:hover svg {
+  stroke-dashoffset: -480;
+}
+
+.btn span {
+  color: white;
+  font-size: 18px;
+  font-weight: 900;
 }

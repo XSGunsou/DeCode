@@ -27,6 +27,7 @@ const characterMap = {
   "y": "ั",
   "z": "ผ",
   ";": "ว",
+  "1": "ๅ",
   "4": "ภ",
   "5": "ถ",
   "6": "ุ",
@@ -47,6 +48,7 @@ const characterMap = {
   ">": "ฬ",
   "/": "ฝ",
   "?": "ฦ",
+  '\\': 'ฃ',
   
   // Uppercase mappings (modify as needed)
   "A": "ฤ",
@@ -75,7 +77,9 @@ const characterMap = {
   "Y": "ํ",
   "Z": "(",
   ":": "ซ", 
-  "^": "ู", // Add your mapping for uppercase G
+  "^": "ู",
+  "W": '"', 
+  '|': 'ฅ',
   
   // Thai lowercase mappings (modify as needed)
   "ๆ": "q",
@@ -133,7 +137,7 @@ const characterMap = {
   "ฺ": "B",
   "์": "N",
   "?": "M",
-  "": "",
+  '"': "W",
   "": "",
 };
 
@@ -170,3 +174,4 @@ function convertMessage() {
 
   outputText.textContent = convertedMessage;
 }
+

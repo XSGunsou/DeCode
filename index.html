@@ -7,12 +7,29 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>DeCode</h1>
-  <p>พิมพ์อะไรของมันว่ะ</p>
-  <br> <input id="inputText" name="inputText" value="" size="40">
-  <br> <button onclick="convertMessage()">Convert</button>
+  <h1><span class="highlight">De</span>Code</h1>
+  <p>You seem to have forgotten something...</p>
+  <br>
+  <input id="inputText" name="inputText" value="" size="40">
+  <br>
+  <div class="container">
+    <div class="center">
+      <button onclick="convertMessage()" class="btn" id="convertButton">
+        <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+          <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+          <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+        </svg>
+        <span>CONVERT</span>
+      </button>
+    </div>
+  </div>
+  
   <p id="outputText"></p>
-  <div class="watermark">© Wireframe 25ᵗʰ May 2024    version 1.2</div>
+  <div class="watermark">© Wireframe 25ᵗʰ May 2024 version 2.0 (31052024)</div> 
+  <div id="kofi-container">
+    <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script>
+    <script type='text/javascript'>kofiwidget2.init('Support Me on Ko-fi', '#4F95DA', 'D1D3YJUF6');kofiwidget2.draw();</script>
+  </div>
   <script src="script.js"></script>
 </body>
 </html>

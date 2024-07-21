@@ -1,5 +1,5 @@
 const characterMap = {
-  // Lowercase mappings
+  // Lowercase Mappings
   "a": "ฟ",
   "b": "ิ",
   "c": "แ",
@@ -50,7 +50,7 @@ const characterMap = {
   "?": "ฦ",
   '\\': 'ฃ',
   
-  // Uppercase mappings (modify as needed)
+  // Uppercase Mappings
   "A": "ฤ",
   "B": "ฺ",
   "C": "ฉ",  
@@ -81,7 +81,7 @@ const characterMap = {
   "W": '"', 
   '|': 'ฅ',
   
-  // Thai lowercase mappings (modify as needed)
+  // Thai Lowercase Mappings 
   "ๆ": "q",
   "ไ": "w",
   "ำ": "e",
@@ -111,7 +111,7 @@ const characterMap = {
   "": "",
   "": "",
   
-  // Thai uppercase mappings (modify as needed)
+  // Thai Uppercase Mappings 
   "๐": "Q",
   "ฎ": "E",
   "ฑ": "R",
@@ -150,7 +150,7 @@ function convertMessage() {
   for (let i = 0; i < inputText.length; i++) {
     const char = inputText[i];
     
-    // Check for specific sequences
+    // check specific sequences
     if (char === '?') {
       if (i < inputText.length - 1) {
         const nextChar = inputText[i + 1];
@@ -166,7 +166,7 @@ function convertMessage() {
     if (specialMapping && char === '?') {
       convertedChar = 'ฦ';
     } else {
-      convertedChar = characterMap[char] || char; // Default to character if not mapped
+      convertedChar = characterMap[char] || char; // default if not mapped
     }
 
     convertedMessage += convertedChar;

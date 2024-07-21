@@ -18,7 +18,7 @@ h1 {
 }
 
 .highlight {
-  color: #4F95DA; /* Color matching the button hover state */
+  color: #4F95DA; 
 }
 
 p {
@@ -50,7 +50,7 @@ input {
   position: fixed;
   bottom: 10px;
   right: 10px;
-  z-index: 999; /* Increase z-index to a high value */
+  z-index: 999; 
 }
 
 .container {
@@ -67,7 +67,7 @@ input {
 }
 
 .btn {
-  font-family: 'Lato', sans-serif; /* Apply Lato font to button */
+  font-family: 'Lato', sans-serif; 
   width: 180px;
   height: 60px;
   cursor: pointer;

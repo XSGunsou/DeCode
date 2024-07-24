@@ -150,7 +150,7 @@ function convertMessage() {
   for (let i = 0; i < inputText.length; i++) {
     const char = inputText[i];
     
-    // check specific sequences
+    // check 
     if (char === '?') {
       if (i < inputText.length - 1) {
         const nextChar = inputText[i + 1];
@@ -166,7 +166,7 @@ function convertMessage() {
     if (specialMapping && char === '?') {
       convertedChar = 'ฦ';
     } else {
-      convertedChar = characterMap[char] || char; // default if not mapped
+      convertedChar = characterMap[char] || char; // def if not mapped
     }
 
     convertedMessage += convertedChar;
